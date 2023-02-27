@@ -17,16 +17,16 @@
 
         .widget {
             padding: 5px 5px ;
-            color: #000000;
+            color: #ffffff;
             display: flex;
             justify-content:center;
             align-items:center;
             flex-direction: column;
             max-width: 95%;
             margin: auto;
-            border: 3px solid #000000;
+            border: 3px solid #ffffff;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #000000;
+            box-shadow: 2px 2px 1px 0px #ffffff;
 
         }
 
@@ -97,11 +97,11 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
         if (hrs < 12)
-            greet = 'Bom dia!  '+name;
+            greet = 'Bom dia  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Boa tarde! '+name;
+            greet = 'Boa tarde '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Boa noite!  '+name;
+            greet = 'Boa noite  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
