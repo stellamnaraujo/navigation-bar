@@ -36,12 +36,12 @@ body {
 .calculator {
   
     display: inline-block;
-    background: #c7e0ff;
+    background: rgb(240, 240, 190);
     margin: 1% 0;
     color: #547eb3;
-    border: 3px solid #547eb3;
-    border-radius: 5px;
-    box-shadow: 2px 2px 1px 0px #547eb3;
+    border: 3px solid rgb(240, 240, 190);
+    border-radius: 25px;
+    box-shadow: 10px 10px 1px 0px sienna;
     max-width: 450px;
 
 
@@ -54,11 +54,11 @@ body {
     min-width: 2.4em;
     min-height: 2.4em;
     margin: 0.8%;
-    border-radius: 25%;
-    border: 0.08em solid #e0c23a;
+    border-radius: 100%;
+    border: 0.08em solid rgb(234,178,156);
     font-family: monospace;
-    background: #fff7bd;
-    box-shadow: 0.04em  0.04em 0.02em 0px #e0c23a;
+    background: rgb(234,178,156);
+    box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
 
 }
 
@@ -68,33 +68,35 @@ body {
     width: 2.4em;
     min-height: 2.4em;
     margin: 0.5%;
-    border-radius: 15%;
-    border: 0.08em solid #c7e0ff;
-    background: #c7e0ff;
+    border-radius: 100%;
+    border: 0.08em solid rgb(240, 240, 190);
+    background: rgb(240, 240, 190);
 
 
 }
 
 .calculator .accent{
-   background: #ffd6e6;
-   border: 0.08em solid #d683a8;
-   box-shadow: 0.04em  0.04em 0.02em 0px #d683a8;  
+
+   border: 0.08em solid rgb(234,178,156); 
+   background: rgb(234,178,156); 
+   box-shadow: 0.15em 0.15em 0.02em 0px rgb(194, 91, 44);
+
 }
 
 .calculator button:hover{
-    background: #ffffff;
+    background: rgb(234,178,156);
   color:#000000;
   transform: scale(0.9);
-  border-radius: 20%;
+  border-radius: 100%;
 
 }
 
 .calculator 
-#clear:hover , #rad:hover  ,#deg:hover{
-  background: #ffffff!important;
+#rad:hover  ,#deg:hover{
+  background: rgb(234,178,156)!important;
   color:#000000;
   transform: scale(0.9);
-  border-radius: 20%;
+  border-radius: 100%;
 }
 
 .calculator button:focus,
@@ -106,14 +108,14 @@ body {
 .button:active,
 .button-active {
   background: rgb(0, 0, 0);
-  color:#ffffff;
+  color:rgb(234,178,156);
   transform: scale(0.8);
 }
 
  #screen{
 
-    border: 3px solid #547eb3;
-    border-radius: 5px;
+    border: 0px solid #96b4af;
+    border-radius: 20px;
     width: 80%;
     height: 100px;
     margin : 5%;
@@ -122,23 +124,29 @@ body {
     overflow-wrap: break-word;
     font-size: 60px;
     font-family: monospace;
-    background-color: #547eb3;
-    color: #fff;
+    background-color: #96b4af;
+    color: #000;
+    box-shadow: 3px 3px rgb(121, 145, 141) inset;
 
 }
 
     
 #clean {
-  background: #fff7bd;
-  color:#000000;
+  background: rgb(234,178,156);
+  border: 0.08em solid rgb(234,178,156);
+  box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
 }
+ 
 #rad {
-  background: #fff7bd;
-  color:#000000;
+  background: rgb(234,178,156);
+  border: 0.08em solid rgb(234,178,156);
+  box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
 }
+ 
 #deg {
-  background: #fff7bd;
+  background: rgb(234,178,156);
   color:#000000;
+  box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
 }
 
 .rows{
