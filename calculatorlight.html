@@ -7,23 +7,17 @@
     <title>calculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MuseoModerno:wght@300;400&display=swap" rel="stylesheet">
 
-
     <style>
 
 body {
   margin: 0 auto;
   text-align: center;
   font-size: 23px;
-
-
 }
 
 .main {
   max-width: 10%;
 }
-
-
-
 
 .button > .over {
   text-decoration:overline;
@@ -42,24 +36,28 @@ body {
     border: 3px solid rgb(240, 240, 190);
     border-radius: 25px;
     box-shadow: 10px 10px 1px 0px sienna;
-    max-width: 450px;
-
-
+    max-width: 240px;
   
 }
 
 .calculator .button {
   
     font-size: x-large;
-    min-width: 2.4em;
-    min-height: 2.4em;
+    width: 2em;
+    min-height: 2em;
     margin: 0.8%;
     border-radius: 100%;
-    border: 0.08em solid rgb(234,178,156);
+    border: 0.08em solid rgb(234, 178, 156);
     font-family: monospace;
-    background: rgb(234,178,156);
+    background: rgb(234, 178, 156);
     box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
 
+}
+
+.calculator .accent{
+   background: rgb(234, 178, 156); 
+   border: 0.08em solid rgb(234, 178, 156);
+   box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
 }
 
 .calculator .space {
@@ -72,19 +70,11 @@ body {
     border: 0.08em solid rgb(240, 240, 190);
     background: rgb(240, 240, 190);
 
-
 }
 
-.calculator .accent{
-
-   border: 0.08em solid rgb(234,178,156); 
-   background: rgb(234,178,156); 
-   box-shadow: 0.15em 0.15em 0.02em 0px rgb(194, 91, 44);
-
-}
-
-.calculator button:hover{
-    background: rgb(234,178,156);
+.calculator button:hover,
+#backspace:hover {
+  background: rgb(234, 178, 156);
   color:#000000;
   transform: scale(0.9);
   border-radius: 100%;
@@ -92,8 +82,8 @@ body {
 }
 
 .calculator 
-#rad:hover  ,#deg:hover{
-  background: rgb(234,178,156)!important;
+#clear:hover , #rad:hover  ,#deg:hover{
+  background: rgb(234, 178, 156)!important;
   color:#000000;
   transform: scale(0.9);
   border-radius: 100%;
@@ -107,22 +97,22 @@ body {
 
 .button:active,
 .button-active {
-  background: rgb(0, 0, 0);
-  color:rgb(234,178,156);
+  background: rgb(234, 178, 156);
+  color:#000000;
   transform: scale(0.8);
 }
 
  #screen{
 
-    border: 0px solid #96b4af;
+    border: 0px solid #000000;
     border-radius: 20px;
     width: 80%;
-    height: 100px;
+    height: 50px;
     margin : 5%;
     text-align: right;
     overflow: auto;
     overflow-wrap: break-word;
-    font-size: 60px;
+    font-size: 30px;
     font-family: monospace;
     background-color: #96b4af;
     color: #000;
@@ -132,21 +122,16 @@ body {
 
     
 #clean {
-  background: rgb(234,178,156);
-  border: 0.08em solid rgb(234,178,156);
-  box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
-}
- 
-#rad {
-  background: rgb(234,178,156);
-  border: 0.08em solid rgb(234,178,156);
-  box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
-}
- 
-#deg {
-  background: rgb(234,178,156);
+  background: rgb(234, 178, 156);
   color:#000000;
-  box-shadow: 0.15em  0.15em 0.02em 0px rgb(194, 91, 44);
+}
+#rad {
+  background: rgb(234, 178, 156);
+  color:#000000;
+}
+#deg {
+  background: rgb(234, 178, 156);
+  color:#000000;
 }
 
 .rows{
@@ -177,7 +162,6 @@ body {
   bottom: 0;
 }
 
-
     </style>
 </head>
 <body>
@@ -188,26 +172,24 @@ body {
 
         <div class="rows">
             <div class="calculator__row1">
-                <button class="button" id="rad">Rad</button>
-                <button class="button" id="deg" >Deg</button>
-                <div class="space" ></div>
-                <div class="space" ></div>
+
+                <button class="button accent">(</button>
+                <button class="button accent">)</button>
                 <div class="space" ></div>
                 <div class="space" ></div>
                 <button class="button" id="clean">AC</button>
             </div>
                 <div class="calculator__row2">
-                     <button class="button accent">sin</button>
-                     <button class="button accent">cos</button>
-                     <button class="button accent">tan</button>
+
+                  <button class="button accent">x^</button>
                        <button class="button ">7</button>
                         <button class="button ">8</button>
                         <button class="button ">9</button>
                         <button class="button accent">*</button>
                 </div>
                 <div class="calculator__row3">
-                    <button class="button accent">x^</button>
-                    <button class="button accent">pi</button>
+               
+
                     <button class="button accent">%</button>
                       <button class="button ">4</button>
                         <button class="button ">5</button>
@@ -215,18 +197,15 @@ body {
                         <button class="button accent">/</button>
                 </div>
                 <div class="calculator__row4">
-                  <button class="button accent">ln</button>
-                  <button class="button accent">log</button>
-                  <button class="button accent">x!</button>
+                  <button class="button accent">&radic;<span class="over"></span></button>
                         <button class="button ">1</button>
                         <button class="button ">2</button>
                         <button class="button ">3</button>
                         <button class="button accent">-</button>
                 </div>
                         <div class="calculator__row5">
-                  <button class="button accent">&radic;<span class="over"></span></button>
-                  <button class="button accent">(</button>
-                  <button class="button accent">)</button>
+               
+                          <div class="space" ></div>
                         <button class="button accent">.</button>
                   <button class="button ">0</button>
                         <button class="button accent">=</button>
